@@ -6,6 +6,9 @@ const routes: Routes = [
     path: 'chat', loadChildren: './chat/chat.module#ChatModule'
   },
   {
+    path: 'auth', loadChildren: './auth/auth.module#AuthModule'
+  },
+  {
     path: '**', loadChildren: './not-found/not-found.module#NotFoundModule'
   }
 ];

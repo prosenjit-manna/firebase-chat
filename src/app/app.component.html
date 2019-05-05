@@ -1,1 +1,11 @@
+<ul class="navigation">
+  <li *ngIf="!isLoggedIn">
+    <a>Login</a>
+  </li>
+  <li *ngIf="isLoggedIn">
+    <a>Logout</a>
+  </li>
+  
+</ul>
+
 <router-outlet></router-outlet>
